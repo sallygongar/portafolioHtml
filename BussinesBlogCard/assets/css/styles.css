@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    background-color: #E6D6FC;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px;
+  margin-top: 2rem;
+  width: 400px;
+  height: 420px;
+  background-color: #FFF;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+  border-radius: 15px;
+}
+
+.card .card_overlay{
+  position: relative;
+}
+
+.card .card_img{
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #FFF;
+}
+
+.card_overlay .img_overlay{
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+}
+
+.card_info{
+  padding: 5px 20px 10px 45px
+}
+
+.card_info p {
+  margin: 5px 0;
+
+}
+ 
+.card_info p:first-child{
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
+.card_info p:nth-child(2n){
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+
+.card_info-avatar{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-top: 1.5rem;
+  padding: 10px 0;
+}
+
+.card_info-avatar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card_info-employee{
+  display: flex;
+  flex-direction: column;
+}
+
+.card_info-employee p:first-child{
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+.card_info-employee p:nth-child(2n){
+  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: black;
+  margin-top: 0;
+}
