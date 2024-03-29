@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#4ba9e9 0,#4ba9e9 50%,#fff 50%,#fff 100%);
+	min-height: 100vh;
+}
+
+.card{
+  position: relative;
+  width: 300px;
+  height: 380px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover{
+  width: 600px;
+}
+
+.card .cardImage{
+  position: relative;
+  min-width: 300px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+}
+
+.card .cardImage img{
+  max-width: 250px;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .cardImage img{
+ transform: rotate(-10deg) translateX(-20px);
+
+}
+
+.card .cardDetails{
+  position: absolute;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background: #4ba9e9;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .cardDetails{
+  left: 300px;
+}
+
+.card .cardDetails::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  z-index: 1;
+}
+
+.card .cardDetails h3{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card .cardDetails h3 span{
+  font-size: 1em;
+  font-weight: 300;
+  opacity: 0.85;
+  text-transform: none;
+}
+
+.card .cardDetails h4{
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 600;
+  font-size: 1em;
+  line-height: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p{
+  color: #fff;
+  font-size: 0.8em;
+  opacity: 0.85;
+}
+
+.cardTalla{
+  display: flex;
+  gap: 10px;
+}
+
+.cardTalla li{
+  list-style: none;
+  color: #fff;
+  font-size: 0.9em;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  cursor: pointer;
+  font-weight: 500;
+  opacity: 0.5; 
+}
+
+.cardTalla li:hover 
+{
+	background: #fff;
+	color: #4ba9e9;
+	opacity: 1;
+}
+
+.cardPrice{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.card .cardDetails h2{
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em
+}
+
+.card .cardDetails h2 sup{
+  font-weight: 300;
+}
+
+.card .cardDetails h2 small{
+  font-size: 0.75em;
+}
+
+.card .cardDetails a{
+  display: inline-flex;
+  padding: 8px 6px;
+  background: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4ba9e9;
+  border-radius: 2px;
+  font-size: 16px;
+}
