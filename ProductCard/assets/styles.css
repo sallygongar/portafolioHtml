@@ -12,7 +12,7 @@ body
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(#4ba9e9 0,#4ba9e9 50%,#fff 50%,#fff 100%);
+	background: linear-gradient(#fc43be 0,#fc43be 50%,#fff 50%,#fff 100%);
 	min-height: 100vh;
 }
 
@@ -53,7 +53,7 @@ body
   left: 0;
   width: 300px;
   height: 100%;
-  background: #4ba9e9;
+  background: #fc43be;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -130,7 +130,7 @@ p{
 .cardTalla li:hover 
 {
 	background: #fff;
-	color: #4ba9e9;
+	color: #fc43be;
 	opacity: 1;
 }
 
@@ -165,7 +165,13 @@ p{
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  color: #4ba9e9;
+  color: #fc43be;
   border-radius: 2px;
   font-size: 16px;
+}
+
+.card .cardDetails a:hover{
+  background: #fc43be;
+  color: #fff;
+  border: 1px solid #fff;
 }
